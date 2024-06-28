@@ -1,0 +1,41 @@
+.personagens{
+    padding-top: 128px;
+    
+    &__content{
+        padding: 5.6vw;
+        
+        h2{
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        &__list{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            opacity: 0;
+            transition: opacity 5s ease;
+
+
+            &--is-visible{
+                opacity: 100;
+            }
+
+            &__item{
+                max-width: 450px;
+                padding-top: 64px;
+
+                h3{
+                    justify-content: center;
+                    text-align: center;
+                }
+
+                img{
+                    border-radius: 900px;
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        }
+    }
+}

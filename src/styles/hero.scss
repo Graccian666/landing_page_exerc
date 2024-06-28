@@ -1,0 +1,51 @@
+.hero{
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url(../../dist/images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 80vh;   
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        max-width: 740px;
+        flex-wrap: nowrap;
+
+        h3{
+            padding: 0 16px 8px;
+            font-size: 16px;
+        }
+
+        p{
+            padding: 16px;
+        }
+
+        &__sobre{
+            list-style: none;
+            display: flex;
+
+            &__item{
+                color: white;
+                padding: 0 12px ;
+                font-weight: 600;
+                font-size: 24px;
+            }
+        }
+
+        &__list{
+            display: flex;
+            list-style: none;
+            margin-top: 32px;
+            
+            &__item{
+                color: rgb(255, 255, 255);
+                padding-left: 16px;
+                text-decoration: underline;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
