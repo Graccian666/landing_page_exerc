@@ -2,11 +2,13 @@
 @use 'sobre';
 @use 'personagens';
 @use 'footer';
+@use 'perguntas';
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 $bgColor: #010101;

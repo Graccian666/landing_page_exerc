@@ -1,5 +1,6 @@
 .personagens{
     padding-top: 128px;
+    padding-bottom: 128px;
     
     &__content{
         padding: 5.6vw;
@@ -15,6 +16,26 @@
             justify-items: center;
             opacity: 0;
             transition: opacity 5s ease;
+            gap: 5%;
+
+            @media (max-width:768px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &__item{
+                    h3{
+                        font-size: 40px;
+                    }
+                }
+            }
+
+            @media (max-width:1024px) {
+                grid-template-columns: 1fr 1fr;
+                gap: 5%;
+
+            }
+    
 
 
             &--is-visible{
